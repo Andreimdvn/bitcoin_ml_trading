@@ -1,0 +1,16 @@
+services:
+  elk:
+      build: .
+      ports:
+        - "5601:5601"
+        - "9200:9200"
+        - "5044:5044"
+      volumes:
+        - my_elk_volume:/var/lib/elasticsearch
+  rabbitmqqq:
+    image: "rabbitmq:3-management"
+    ports:
+    - "15672:15672"
+    - "5672:5672"
+volumes:
+    my_elk_volume:
