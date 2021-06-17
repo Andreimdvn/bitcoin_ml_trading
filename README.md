@@ -21,6 +21,6 @@ This should run with the dummy files that are present in the repository.
 
 To run a strategy tunning use
 ```sh
-py -3.8 mian_tuner.py
+py -3.8 main_tuner.py
 ```
 
